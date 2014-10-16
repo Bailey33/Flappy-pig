@@ -19,6 +19,7 @@ namespace FlappyBird
 		private float		width;
 		private float		height;
 		private Rectangle   topBounding;
+		private Rectangle   botBounding;
 		
 		
 		//Accessors.
@@ -81,6 +82,8 @@ namespace FlappyBird
 			//create bounding box
 			topBounding = new Rectangle(sprites[0].Position.X, sprites[0].Position.Y, sprites[0].TextureInfo.Texture.Width,sprites[0].TextureInfo.Texture.Height);
 			Console.WriteLine (topBounding);
+			botBounding = new Rectangle(sprites[1].Position.X, sprites[1].Position.Y, sprites[1].TextureInfo.Texture.Width,sprites[1].TextureInfo.Texture.Height);
+			Console.WriteLine (botBounding);
 			
 		}
 		
